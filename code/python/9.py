@@ -12,7 +12,7 @@ total_score = sum(scores.values())
 print(total_score)
 
 print(max(sum))
-print(min(sum))
+print(min(sum))``
 
 print(max(scores.values()))
 print(min(scores.values()))
