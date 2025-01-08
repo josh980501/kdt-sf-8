@@ -79,14 +79,45 @@ for star_row in range(4):
                 print("*"*star)
         print()
 '''
+
+'''
 # 별찍기 4
 for star_row in range(4):
     
     for space in range(4 - star_row, 0, -1):
         print(" ", end = "")
-        for star in range(1, 8):
-            if star % 2 == 1:
-                print("*"*star)
-        print()
 
-        
+    for star in range(1, 8):
+        if star % 2 != 0:
+            print("*"*star)
+    print()
+'''
+
+# 별찍기 4 Sean님 풀이
+# 엑셀에 출력한다고 생각
+
+n = 4 #줄 개수
+for i in range(1, n + 1): #1~n 반복
+    # 공백 출력
+    # i 번째 줄에 대한 내용
+    for j in range(n-i): #n - i개의 공백이 출력
+        print(" ", end = "")
+        # ex. 1번째줄: N - 1/ 2번째 줄: n-2 ....4 번째줄: n-4
+
+
+
+    # 별 출력
+    for k in range(2*i - 1): #2*i - 1 개의 별 출력
+        print("*", end="")
+    #내부 포문이 종료되는 시점
+    print()
+
+
+# 별찍기 5 Sean님 풀이
+# 삼각형 나눠서 풀기
+n = 5 # 줄 개수
+
+# 윗 삼각형
+
+
+# 아래 삼각형
