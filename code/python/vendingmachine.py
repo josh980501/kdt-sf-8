@@ -29,12 +29,12 @@ while True:
                      "2. 주인\n"
                      "0. 종료\n:")
     
-    if user_type == "1" or "소비자":
+    if user_type == "1":
         drink = input("마시고 싶은 음료? ")
         remove_drink(drink)
         check_machine()
 
-    elif user_type == "2" or "주인":
+    elif user_type == "2":
         action = input("할 일 선택:\n1. 추가\n2. 삭제\n:")
         if action == "1":
             drink = input("추가할 음료수? ")
