@@ -110,6 +110,5 @@ def main_program():
             break
         else:
             print("1~6까지의 번호를 입력하세요")
-
-
+            
 main_program()
