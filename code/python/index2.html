@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:hover {
+            color: red;
+        }
+        a :active{
+            color: blue;
+        }
+        input:focus {
+            background-color: aqua;
+        }
+        /* 클릭해야만 색깔 바뀜 */
+        .fruits span:first-child {
+            /* 그냥 이름이 span이라. 순서가 중요한거임 */
+            color: orange;
+        }
+        .fruits h3:last-child {
+            color: red;
+        }
+        .fruits *:nth-child() {
+            color: blue;
+        }
+        /* 중간에 있는 것들 지정. 첫번째 마지막 제외한 애들. 2n 이런식으로 많이 씀 */
+        .fruits *:not(span) {
+            color: red;
+        }
+        .box::before {
+            content: "앞!";
+            color: red;
+        }
+        .box::after {
+            content: "뒤";
+            color: orange;
+        }
+        [disabled] {
+            background-color: red;
+        }
+        [type="password"] {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <a href="https://naver.com">네이버</a><br>
+        <input type="text">
+    </div>
+    <div class="fruits">
+        <span>딸기</span>
+        <span>수박</span>
+        <div>오렌지</div>
+        <p>망고</p>
+        <h3>사과</h3>
+    </div> -->
+    <div class="box">컨텐츠</div>
+    <div>
+        <input type="text"><br>
+        <input type="text" disabled><br>
+        <input type="text" value="id" readonly>
+    </div>
+</body>
+</html>
