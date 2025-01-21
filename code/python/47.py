@@ -6,9 +6,9 @@ import json
 url = "https://api.sampleapis.com/avatar/info" # 리스트 안에 json 값이 담겨짐
 res = requests.get(url)
 
-print(res.json())
+# print(res.json())
 
-print(res.status_code)
+# print(res.status_code)
 if res.status_code == 200:
     data = res.json() # json()값으로 가져오기
     print(data[0]["synopsis"]) # 0번 데이터에 있는 시놉시스 갖고옴

@@ -46,9 +46,9 @@ def stock(code):
     prev = soup.select_one(".today > .no_exday > .no_up > .blind")
     print(f"전일대비 : {prev.text.strip()}원")
 
-    per = soup.select(".today > .no_exday > .no_up")
+    per = soup.select(".today > .no_exday > .no_up") # 리스트 형태로 나옴
     result = per[1].find("span", attrs={"class":"blind"})
+    # print(per)
     print(result.text)
 
 stock("000680")
-stock("024830")
