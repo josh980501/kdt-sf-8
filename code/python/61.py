@@ -59,6 +59,7 @@ root.geometry("640x480")
 # root.mainloop()
 
 
+'''
 def show_text():
     #entry
     entried = entry.get()
@@ -84,7 +85,6 @@ button = Button(root, text="버튼클릭", command=show_text).pack()
 label = Label(root, text="")
 label.pack() # 잘 안되면 pack 내려보자
 root.mainloop()
-'''
 '''
 
 '''
@@ -182,7 +182,6 @@ root.mainloop()
 '''
 
 #----------------
-'''
 # 쿠폰 추첨기
 def on_click():
     name_list = ["김민경", "이동건", "최승우", "최영", "한수빈", "이채연", "조경록"]
@@ -209,4 +208,5 @@ text = Text(window, width=40, height=5, bg="green")
 text.pack()
 
 window.mainloop()
+'''
 '''

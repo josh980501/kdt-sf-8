@@ -10,8 +10,9 @@ soup = BeautifulSoup(res.text, "html.parser")
 
 
 table = soup.select_one("table.tData")
+# print(table)
 trs = table.select("tr")[1:] # tr에 있는 것만 가져옴
-# print(trs)
+print(trs)
 
 lists = []
 for tr in trs:
@@ -19,7 +20,7 @@ for tr in trs:
     td = [i.text.strip() for i in td] # td랑 공백 지우기
     lists.append([td[0], td[1], td[3], td[4], td[5], td[6]])
     # print(td)
-print(lists)
+# print(lists)
 array = np.array(lists)
 
 file_name = "kbo_2024_ranking.txt"
